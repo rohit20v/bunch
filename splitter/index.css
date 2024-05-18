@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s ease-in-out;
+}
+
+body {
+    background-color: #c3e2e5;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #426567;
+    gap: 12%;
+}
+
+.card {
+    border-radius: 32px;
+    padding: 2%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 8%;
+    place-items: center;
+    min-width: 400px;
+}
+
+.resultCard {
+    border-radius: 12px;
+    width: 100%;
+    background-color: #00474b;
+}
+
+.lbl_style {
+    font-weight: bold;
+    color: #647070;
+    margin-top: 16px;
+}
+
+.operation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    font-weight: bolder;
+    padding: 12px 48px;
+    min-width: 50%;
+    width: 100%;
+    border-end-end-radius: 8px;
+    border-start-end-radius: 8px;
+    border: none;
+    text-align: end;
+    background-color: #f1f6f9;
+    color: #426567;
+    outline: none;
+    transition: .1s ease-in-out;
+}
+
+.user{
+    border-end-start-radius: 8px;
+    border-start-start-radius: 8px;
+    background-color: #f1f6f9;
+    width: 10%;
+    text-align: center;
+    padding: 8.5px;
+    color: #426567;
+}
+
+.tipLbl{
+    font-size: medium;
+    color: #e9e9e9;
+}
+
+#svgIcon{
+    fill: #005f64;
+}
+
+.tips {
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tip {
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: #00474b;
+}
+
+.tip:last-child {
+    background-color: #f1f6f9;
+    font-weight: bold;
+    color: #00474b;
+    text-align: center;
+    font-size: smaller;
+    padding: 6px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin-block: 6px;
+    padding: 6px;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+}
+
+.dollar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dollar > h2 > span {
+    font-size: x-large;
+}
+
+h2 {
+    color: #22bfa6;
+    font-size: xx-large;
+}
+
+h3 {
+    color: #cacaca;
+    margin: 2px;
+}
+
+h5 {
+    color: rgba(0, 195, 206, 0.47);
+    margin-right: 5%;
+}
+
+.resetBtn {
+    text-align: center;
+}
+
+button[type="reset"] {
+    width: 80%;
+    margin-top: 24%;
+    padding: 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background-color: #22bfa6;
+    color: #00474b;
+}
+
+button {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(200%);
+}
+
+@media (max-width: 700px) {
+    h1{
+        margin-top: 69%;
+    }
+    .card {
+        grid-template-columns: 1fr;
+        min-height: 100%;
+        gap: 16px;
+        grid-template-rows: auto auto;
+        margin-bottom: 10%;
+    }
+
+    .resultCard {
+        width: 100%;
+        border-radius: 32px;
+    }
+
+    .operation, .result {
+        width: 100%;
+        padding-inline: 10px;
+    }
+}
