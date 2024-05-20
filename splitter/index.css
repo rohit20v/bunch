@@ -231,6 +231,7 @@ button:hover {
     .card {
         grid-template-columns: 1fr;
         gap: 16px;
+        min-width: 60%;
     }
 
     .resultCard {
