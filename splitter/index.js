@@ -43,14 +43,11 @@ function tipDivider(billValue) {
             }
             const tipPerPerson = tip / people;
 
-            // Calculate the total amount per person
             const initialAmountPerPerson = billValue / people;
             const totPerPerson = initialAmountPerPerson + tipPerPerson;
 
-            // Update the total amount text content
             totAmount.textContent = "$" + totPerPerson.toFixed(2);
 
-            // Update the tip amount text content
             if (tipPerPerson !== 0) {
                 tipAmount.textContent = "$" + tipPerPerson.toFixed(2);
             } else {
