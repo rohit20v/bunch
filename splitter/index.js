@@ -4,9 +4,9 @@ const totAmount = document.querySelector(".totAmount")
 const tipAmount = document.querySelector(".tipAmount")
 const buttons = document.querySelectorAll(".tip")
 const resetBtn = document.querySelector("#resetBtn")
-const hamburger = document.querySelector("#ham")
-const nav = document.getElementById("nav")
-const main = document.getElementById("main")
+// const hamburger = document.querySelector("#ham")
+// const nav = document.getElementById("nav")
+// const main = document.getElementById("main")
 // const form = document.querySelector("#myForm")
 //
 // form.addEventListener("submit", () => {
@@ -14,17 +14,17 @@ const main = document.getElementById("main")
 // })
 
 let hamClicked = false;
-hamburger.addEventListener("click", () => {
-    if (!hamClicked){
-        nav.style.top = "0px";
-        hamClicked = true;
-        main.classList.add("blur")
-    }else {
-        nav.style.top = "-42px";
-        hamClicked = false
-        main.classList.remove("blur")
-    }
-})
+// hamburger.addEventListener("click", () => {
+//     if (!hamClicked){
+//         nav.style.top = "0px";
+//         hamClicked = true;
+//         main.classList.add("blur")
+//     }else {
+//         nav.style.top = "-42px";
+//         hamClicked = false
+//         main.classList.remove("blur")
+//     }
+// })
 
 numPeople.addEventListener('input', () => {
     bill.disabled = numPeople.value.trim() === "";
